@@ -8,6 +8,11 @@ data = json.loads(content)
 for question in data:
     print(question["question_text"])
     for index, alternative in enumerate(question["alternatives"]):
-        print(index, "-",  alternative)
+        print(index + 1, "-",  alternative)
+    user_choice = int(input("Enter your choice: "))
+    question["user_choice"] = user_choice
+
+print(data)
+
 
 
