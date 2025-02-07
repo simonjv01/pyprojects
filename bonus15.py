@@ -1,10 +1,13 @@
 import json
 
 with open("questions.json", "r") as file:
-    questions = file.read()
+    content = file.read()
 
-data = json.loads(questions)
+data = json.loads(content)
 
-print(data)
+for question in data:
+    print(question["question_text"])
+    for index, alternative in enumerate(question["alternatives"]):
+        print(index, "-",  alternative)
 
 
