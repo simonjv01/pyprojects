@@ -19,7 +19,7 @@ for question in data:
 for question in data:
     message = f"question: {question['question_text']}, your answer: {question['user_choice']}, correct answer: {question['correct_answer']}"
     print(message)
-print("score: ", score)
+print("scores: ", score)
 print("percentage correct/wrong: ", score / len(data) * 100, "%")
 
 
