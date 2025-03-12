@@ -17,5 +17,5 @@ def log_calls(func):
 def add(x, y):
     return x + y
 
-result = add(3, 9)
-print(result) # Output: 12
+result = add(3, 10)
+print(result) # Output: 13
