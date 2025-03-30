@@ -30,5 +30,5 @@ if __name__ == '__main__':
     response = connect_to_api(url)
 
     if response:
-        print("API Response:")
+        print("API Response Result:")
         print(json.dumps(response.json(), indent=4))
